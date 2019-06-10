@@ -1,0 +1,41 @@
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.IO;
+
+namespace TestSpace
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            int[] addNums = new int[6];
+            Console.WriteLine("I am alive!");
+            
+            //Get the numbers to add together
+            Console.WriteLine("\nInput the first number: ");
+            addNums[1] = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nInput the second number: ");
+            addNums[2] = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nInput the third number: ");
+            addNums[3] = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nInput the fourth number: ");
+            addNums[4] = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nInput the fifth number: ");
+            addNums[5] = Convert.ToInt32(Console.ReadLine());
+            int tot = 0;
+            
+            //Add all numbers in the array together
+            for(int i = 0; i < 6; i++){
+                tot += addNums[i];
+            }
+            
+            //Print total
+            Console.WriteLine("\nTotal is: " + tot);
+            
+        }
+    }
+}
